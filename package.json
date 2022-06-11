@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js",
+    "start": "node test.js",
     "start-all": "concurrently -k -p \"[{name}]\" -n \"LB,User-1,User-2,User-3,wallet-1,wallet-2,wallet-3 \" -c \"yellow.bold,cyan.bold,red.bold,blue.bold,green.bold,cyan.bold,red.bold,blue.bold,green.bold\" \"nodemon LB/index.js\" \"nodemon user-1/index.js\" \"nodemon user-2/index.js\" \"nodemon user-3/index.js\" \"nodemon wallet-1/index.js\" \"nodemon wallet-2/index.js\" \"nodemon wallet-3/index.js\""
   },
   "keywords": [],
