@@ -1,0 +1,22 @@
+{
+  "name": "LB",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "start-all": "concurrently -k -p \"[{name}]\" -n \"LB,User-1,User-2,User-3,wallet-1,wallet-2,wallet-3 \" -c \"yellow.bold,cyan.bold,red.bold,blue.bold,green.bold,cyan.bold,red.bold,blue.bold,green.bold\" \"nodemon LB/index.js\" \"nodemon user-1/index.js\" \"nodemon user-2/index.js\" \"nodemon user-3/index.js\" \"nodemon wallet-1/index.js\" \"nodemon wallet-2/index.js\" \"nodemon wallet-3/index.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "concurrently": "^7.2.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.7.5",
+    "nodemon": "^2.0.16"
+  }
+}
