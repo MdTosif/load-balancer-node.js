@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node test.js",
-    "start-all": "concurrently -k -p \"[{name}]\" -n \"LB,User-1,User-2,User-3,wallet-1,wallet-2,wallet-3 \" -c \"yellow.bold,cyan.bold,red.bold,blue.bold,green.bold,cyan.bold,red.bold,blue.bold,green.bold\" \"nodemon LB/index.js\" \"nodemon user-1/index.js\" \"nodemon user-2/index.js\" \"nodemon user-3/index.js\" \"nodemon wallet-1/index.js\" \"nodemon wallet-2/index.js\" \"nodemon wallet-3/index.js\""
+    "start-all": "concurrently -k -p \"[{name}]\" -n \"LB,User-1,User-2,User-3,wallet-1,wallet-2,wallet-3 \" -c \"yellow.bold,cyan.bold,red.bold,blue.bold,green.bold,cyan.bold,red.bold,blue.bold,green.bold\" \"nodemon LB/index.js\" \"nodemon user-1/index.js\" \"nodemon user-2/index.js\" \"nodemon user-3/index.js\" \"nodemon wallet-1/index.js\" \"nodemon wallet-2/index.js\" \"nodemon wallet-3/index.js\"",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +19,8 @@
     "morgan": "^1.10.0",
     "nodemailer": "^6.7.5",
     "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "jest": "^28.1.2"
   }
 }
