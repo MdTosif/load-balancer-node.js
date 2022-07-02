@@ -54,3 +54,5 @@ app.get('/user', handler)
 app.listen(port, () => {
     console.log("load balancer is listening to :", port);
 })
+
+module.exports = app
